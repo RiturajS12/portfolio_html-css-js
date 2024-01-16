@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "GrandSlang-Roman";
+  src: url("/fonts/GrandSlang-Roman.otf") format("woff2");
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  background-color: #ece7e1;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 2%;
+  margin-top: 1%;
+  padding: 2%;
+  gap: 20px;
+  position: absolute;
+  top: -100vh;
+  transition: top 1s ease;
+}
+body.loaded .container {
+  top: 0;
+}
+body.loaded .options {
+  opacity: 1;
+  transform: translateY(0);
+}
+.nav-list {
+  width: 2%;
+  margin: 10px;
+  font-family: "GrandSlang-Roman", sans-serif;
+}
+
+.nav-line {
+  width: 1px;
+  height: 15%;
+  background-color: #333;
+  margin: 0 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  transform: rotate(180deg);
+  display: inline-block;
+  writing-mode: vertical-rl;
+}
+
+.nav-list a:hover {
+  text-decoration-line: line-through;
+}
+
+.ab {
+  position: absolute;
+  left: 175px;
+  bottom: 100px;
+  width: 18%;
+}
+.ab img {
+  object-fit: cover;
+  border-radius: 100px;
+  width: 60%;
+  height: 160px;
+}
+.ab h1 {
+  font-family: "GrandSlang-Roman", sans-serif;
+  font-size: 15px;
+}
+
+p {
+  font-family: "GrandSlang-Roman", sans-serif;
+  font-size: 13px;
+}
+
+.options {
+  opacity: 0; /* Set initial opacity to 0 */
+  transform: translateY(-50px); /* Move the options up initially */
+  transition: opacity 1s, transform 1s;
+  position: absolute;
+  left: 510px;
+  top: 72px;
+  width: 18%;
+}
+.options a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1a1818;
+  font-family: "GrandSlang-Roman", sans-serif;
+  font-size: 135px;
+  display: flex;
+}
+.options a:hover {
+  text-decoration: none;
+  color: #1a1818;
+  font-family: "GrandSlang-Roman", sans-serif;
+  font-style: italic;
+  font-size: 135px;
+  display: flex;
+}
