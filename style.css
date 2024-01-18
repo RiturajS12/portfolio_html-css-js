@@ -121,8 +121,7 @@ p {
     width: 100%;
   }
   .ins{
-    width: 100%;
-    height: 100%;
+    width: 10px;
   }
   .options {
     position: static;
@@ -131,6 +130,8 @@ p {
   }
 
   .options a {
+    position: relative;
+    top: 80px;
     font-size: 58px;
   }
   .options a:hover{
@@ -138,10 +139,10 @@ p {
   }
   .ab {
     position: relative;
-    left: auto;
+    left:50px;
     top: 10%;
-    width: 100%;
-    height: 50%;
+    width: 80%;
+    height: 40%;
     text-align: center;
   }
  .ab img{
