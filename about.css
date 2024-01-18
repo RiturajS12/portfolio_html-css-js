@@ -4,6 +4,7 @@
 }
 *{
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -63,46 +64,49 @@ body.loaded img {
     position: absolute;
     left: 40%;
     width: 30%;
-    top: 6%;
+    top: 3.8%;
   }
   .img{
+    width: 100%;
     position: absolute;
-    left: 75%;
-    top: 10%;
-    width: 90%;
-    height: 60%;
+    left: 5%;
+    top: 7.5%;
+    height: 60px;
     border: #ece7e1 solid 1px;
     object-fit: fill;
   }
   .ab img {
     position: relative;
-    width: 100%;
+    width: 80%;
+    left: -40px;
     height: 380px;
     opacity:85%;
   }
   img{
-    position: absolute;
-    top: 100;
+    position: relative;
+    left: -20px;
+    width: 80%;
+    top: 25px;
     transition: bottom 2s ease;
   }
   .ab h1 {
     position: absolute;
-    right: 75%;
     top: -15%;
     font-family: "GrandSlang-Roman", sans-serif;
     font-size: 190px;
     font-weight: 100;
   }
-  p {
+  p{
     position: relative;
-    right: 90%;
-    top: 30%;
+  }
+  .ab p {
+    position: relative;
     font-family:'Courier New', Courier, monospace;
     font-size:14px;
   }
   @media screen and (max-width: 768px) {
     .container-ab {
-      width: 100%;
+      width: 10%;
     }
     .ab {
       position: relative;
@@ -113,12 +117,34 @@ body.loaded img {
       text-align: center;
     }
    .ab img{
-    width: 100%;
-    height: 60%;
+    position: absolute;
+    left: 35px;
+    top: 40px;
+    width: 65%;
+    height: 300px;
     text-align: center;
    }
+   .nav-list a{
+    width: 100%;
+    position: absolute;
+  }
     .nav-list,
     .nav-line {
       display: flex;
+      width: 100%;
     }
+  }
+  .ab h1{
+    width: 80%;
+    position: relative;
+    bottom: 80px;
+    left: 30px;
+    font-size: 100px;
+  }
+  .ab p{
+    width: 350px;
+    position: relative;
+    top: 265px;
+    left: 20px;
+    font-size: 10px;
   }
