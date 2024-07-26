@@ -1,6 +1,6 @@
 @font-face {
   font-family: "GrandSlang-Roman";
-  src: url("/static/fonts/GrandSlang-Roman.otf") format("woff2");
+  src: url("/fonts/GrandSlang-Roman.otf") format("woff2");
 }
 
 * {
